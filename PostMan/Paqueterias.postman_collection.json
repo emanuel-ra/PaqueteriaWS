@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "ed3605c2-02d5-4354-bdca-17370cfba362",
+		"name": "Paqueterias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6254740"
+	},
+	"item": [
+		{
+			"name": "Paquete Express Cobertura",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_PAQUETERIAS}}/PaqueteExpress?zipcode=44100",
+					"host": [
+						"{{URL_PAQUETERIAS}}"
+					],
+					"path": [
+						"PaqueteExpress"
+					],
+					"query": [
+						{
+							"key": "zipcode",
+							"value": "44100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sendex Cobertura",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_PAQUETERIAS}}/api/Sendex?zipcode=44100",
+					"host": [
+						"{{URL_PAQUETERIAS}}"
+					],
+					"path": [
+						"api",
+						"Sendex"
+					],
+					"query": [
+						{
+							"key": "zipcode",
+							"value": "44100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Estafeta Cobertura",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "${URL_PAQUETERIAS}/Estafeta?zipcode=44100",
+					"host": [
+						"${URL_PAQUETERIAS}"
+					],
+					"path": [
+						"Estafeta"
+					],
+					"query": [
+						{
+							"key": "zipcode",
+							"value": "44100"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
